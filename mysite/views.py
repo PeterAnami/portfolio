@@ -1,11 +1,14 @@
 from django.shortcuts import get_object_or_404, render,redirect
 from django.http import HttpResponse, Http404
 import datetime as dt
+
+from email import send_contact_email
+
+from forms import ContactForm
 from .models import Project
 from django.core.exceptions import ObjectDoesNotExist
-from .email import *
+# from email import *
 from django.contrib import messages
-from .forms import *
 
 # Create your views here.
 def home(requst):
