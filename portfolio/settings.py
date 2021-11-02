@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'mysite',
     'rest_framework',
     'cloudinary',
+    'bootstrap4',
 
 ]
 
